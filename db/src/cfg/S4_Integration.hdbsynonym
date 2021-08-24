@@ -1,0 +1,14 @@
+{
+  "SYN_MARA": {
+    "target": {
+      "object": "VT_MARA",
+      "schema": "INTEGRATION"
+    }
+  },
+  "SYN_MAKT": {
+    "target": {
+      "object": "VT_MAKT",
+      "schema": "INTEGRATION"
+    }
+  }
+}

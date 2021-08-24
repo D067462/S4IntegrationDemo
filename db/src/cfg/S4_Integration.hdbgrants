@@ -1,0 +1,14 @@
+{
+"S4_Integration_UPS": {
+"object_owner": {
+"roles": [
+"INTEGRATION::external_access_g"
+]
+},
+"application_user": {
+"roles": [
+"INTEGRATION::external_access"
+]
+}
+}
+}
