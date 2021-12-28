@@ -1,13 +1,19 @@
 {
-  "SYN_MARA": {
+  "S4.db::SYN_MARA": {
     "target": {
       "object": "VT_MARA",
       "schema": "INTEGRATION"
     }
   },
-  "SYN_MAKT": {
+  "S4.db::SYN_MAKT": {
     "target": {
       "object": "VT_MAKT",
+      "schema": "INTEGRATION"
+    }
+  },
+  "S4.db::SYN_MBEW": {
+    "target": {
+      "object": "VT_MBEW",
       "schema": "INTEGRATION"
     }
   }

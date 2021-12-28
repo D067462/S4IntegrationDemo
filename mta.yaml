@@ -1,12 +1,13 @@
 _schema-version: "2.1"
 ID: SDI_S4_Replication
 version: 0.0.1
+
 modules:
-- name: db
+- name: S4-db-deployer
   type: hdb
   path: db
   requires:
-  - name: hdi_db
+  - name: S4-db
     properties:
       TARGET_CONTAINER: ~{hdi-container-name}
   - name: cross-container-service-1
@@ -14,9 +15,13 @@ modules:
     properties:
       key: ServiceName_1
       service: ~{the-service-name}
+
 resources:
-- name: hdi_db
+- name: S4-db
   type: com.sap.xs.hdi-container
+  parameters:
+    service: hana 
+    service-plan: hdi-shared
   properties:
     hdi-container-name: ${service-name}
 - name: cross-container-service-1
@@ -25,3 +30,4 @@ resources:
     service-name: S4_Integration_UPS
   properties:
     the-service-name: ${service-name}
+

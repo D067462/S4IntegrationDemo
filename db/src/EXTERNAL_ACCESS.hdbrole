@@ -1,0 +1,23 @@
+{
+
+    "role": {
+
+        "name": "S4.db::EXTERNAL_ACCESS",
+
+        "schema_privileges": [
+
+            {
+
+                "privileges": [
+
+                    "SELECT"
+
+                ]
+
+            }
+
+        ]
+
+    }
+
+}
